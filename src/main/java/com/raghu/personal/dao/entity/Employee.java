@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 import io.swagger.annotations.ApiModelProperty;
 
@@ -19,14 +20,17 @@ public class Employee {
 	private Long id;
 
 	@Column(name = "first_name")
+	@NotBlank
 	@ApiModelProperty(notes = "FirstName of Employee")
 	private String firstName;
 
 	@Column(name = "last_name")
+	@NotBlank
 	@ApiModelProperty(notes = "LastName of Employee")
 	private String lastName;
 
 	@Column(name = "email", nullable = false, length = 200)
+	@NotBlank
 	@ApiModelProperty(notes = "Email of Employee")
 	private String email;
 
