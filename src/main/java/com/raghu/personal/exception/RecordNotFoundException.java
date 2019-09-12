@@ -11,4 +11,19 @@ public class RecordNotFoundException extends RuntimeException {
 		super(string);
 	}
 
+	public RecordNotFoundException() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public RecordNotFoundException(String message, Throwable cause) {
+		super(message, cause);
+		// TODO Auto-generated constructor stub
+	}
+
+	public RecordNotFoundException(Throwable cause) {
+		super(cause);
+		// TODO Auto-generated constructor stub
+	}
+
 }
