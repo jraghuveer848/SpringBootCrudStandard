@@ -9,8 +9,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.raghu.personal.dao.EmployeeRepository;
 import com.raghu.personal.dao.entity.Employee;
+import com.raghu.personal.dao.repository.EmployeeRepository;
 import com.raghu.personal.exception.RecordNotFoundException;
 import com.raghu.personal.service.EmployeeService;
 

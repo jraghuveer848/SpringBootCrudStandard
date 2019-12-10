@@ -1,4 +1,4 @@
-package com.raghu.personal.dao;
+package com.raghu.personal.dao.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
