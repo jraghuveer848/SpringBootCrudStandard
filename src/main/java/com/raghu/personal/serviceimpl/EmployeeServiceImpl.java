@@ -70,7 +70,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		if (employee.isPresent()) {
 			employeeRepository.deleteById(id);
 		} else {
-			throw new RecordNotFoundException("No employee found for given id");
+			throw new RecordNotFoundException("No employee found");
 		}
 	}
 
